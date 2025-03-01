@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class informationPage {
 
@@ -11,6 +12,8 @@ public class informationPage {
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.yellow);
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
@@ -19,6 +22,7 @@ public class informationPage {
         nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
         nameField.setBounds(50, 10, 100, 20);
+        nameLabel.setHorizontalTextPosition(JLabel.CENTER);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("Age");
@@ -27,6 +31,7 @@ public class informationPage {
         ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
         ageField.setBounds(50, 50, 100, 20);
+        ageLabel.setHorizontalTextPosition(JLabel.CENTER);
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("Email");
@@ -35,24 +40,30 @@ public class informationPage {
         emailLabel.setBounds(10, 90, 100, 20);
         JTextField emailField = new JTextField(15);
         emailField.setBounds(50, 90, 100, 20);
+        emailLabel.setHorizontalTextPosition(JLabel.CENTER);
 
         // Software Familiarity Level
         JLabel levelLabel = new JLabel("Level of familiarity with similar software");
         levelLabel.setFont(CustomFont);
         levelLabel.setBounds(10, 130, 250, 20);
+        levelLabel.setHorizontalTextPosition(JLabel.CENTER);
 
         JRadioButton level1 = new JRadioButton("Beginner");
         level1.setFont(CustomFont);
         level1.setBounds(10, 160, 100, 20);
+        level1.setHorizontalTextPosition(SwingConstants.CENTER);
         JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setFont(CustomFont);
         level2.setBounds(100, 160, 100, 20);
+        level2.setHorizontalTextPosition(SwingConstants.CENTER);
         JRadioButton level3 = new JRadioButton("Advanced");
         level3.setFont(CustomFont);
         level3.setBounds(190, 160, 100, 20);
+        level3.setHorizontalTextPosition(SwingConstants.CENTER);
         JRadioButton level4 = new JRadioButton("No Familiarity");
         level4.setFont(CustomFont);
         level4.setBounds(280, 160, 150, 20);
+        level4.setHorizontalTextPosition(SwingConstants.CENTER);
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
@@ -65,6 +76,7 @@ public class informationPage {
         JButton nextButton = new JButton("Next Page");
         nextButton.setFont(CustomFont);
         nextButton.setBounds(10, 200, 100, 20);
+        nextButton.setHorizontalAlignment(SwingConstants.CENTER);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);

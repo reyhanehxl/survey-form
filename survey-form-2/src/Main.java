@@ -1,7 +1,9 @@
 import javax.swing.*;
 import packages.informationPage;
 
-public class Main {
+import java.awt.*;
+
+public class Main{
 
     public static void main(String[] args) {
         // Creat an object of the Font class
@@ -13,21 +15,24 @@ public class Main {
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
+        panel.setLayout(new BorderLayout());
+        panel.setBackground(Color.YELLOW);
 
         // Create title label
         JLabel title = new JLabel("Survey Form");
         title.setFont(CustomFont);
         title.setBounds(10, 10, 100, 20);
+        title.setHorizontalTextPosition(JLabel.CENTER);
 
         // Create start button
         JButton startButton = new JButton("Start!");
         startButton.setFont(CustomFont);
+        startButton.setHorizontalAlignment(SwingConstants.CENTER);
 
         startButton.setBounds(10, 40, 100, 20);
 
