@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class informationPage {
 
@@ -10,6 +11,7 @@ public class informationPage {
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(Color.yellow);
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("اسم");
