@@ -7,7 +7,7 @@ public class thankYouPage {
 
     public void create(JFrame frame) {
         // Creat an object of the Font class
-        Font CustomFont = new Font("Arial",Font.BOLD,24));
+        Font CustomFont = new Font("Arial",Font.BOLD,24);
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setLayout(null);
