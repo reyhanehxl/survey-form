@@ -13,7 +13,7 @@ public class thankYouPage {
         panel.setBounds(0, 0, 600, 600);
 
         // Create thank you label
-        JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+        JLabel thankYouLabel = new JLabel("Thank you for your participation!");
         thankYouLabel.setFont(CustomFont);
         thankYouLabel.setBounds(10, 10, 200, 20);
 
