@@ -13,6 +13,7 @@ public class thankYouPage {
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(new BorderLayout());
         panel.setBackground(Color.YELLOW);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");

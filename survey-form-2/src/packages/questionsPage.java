@@ -12,6 +12,7 @@ public class questionsPage {
         panel.setLayout(null);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.YELLOW);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
 
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
