@@ -7,7 +7,7 @@ public class questionsPage {
 
     public void create(JFrame frame) {
         // Creat an object of the Font class
-        Font CustomFont = new Font("Arial",Font.BOLD,24));
+        Font CustomFont = new Font("Arial",Font.BOLD,24);
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
@@ -79,7 +79,7 @@ public class questionsPage {
         question3.setBounds(10, 170, 300, 20);
 
         JRadioButton radio3_1 = new JRadioButton("1");
-        r.setFont(CustomFont);
+        radio3_1.setFont(CustomFont);
         radio3_1.setBounds(10, 200, 100, 20);
         JRadioButton radio3_2 = new JRadioButton("2");
         radio3_2.setFont(CustomFont);

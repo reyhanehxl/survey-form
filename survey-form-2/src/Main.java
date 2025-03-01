@@ -7,7 +7,7 @@ public class Main{
 
     public static void main(String[] args) {
         // Creat an object of the Font class
-        Font CustomFont = new Font("Arial",Font.BOLD,24));
+        Font CustomFont = new Font("Arial",Font.BOLD,24);
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey Form");
         frame.setFont(CustomFont);
