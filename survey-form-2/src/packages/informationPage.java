@@ -7,13 +7,14 @@ public class informationPage {
 
     public void create(JFrame frame) {
         // Creat an object of the Font class
-        Font CustomFont = new Font("Arial",Font.BOLD,24);
+        Font CustomFont = new Font("Arial",Font.BOLD,15);
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
         panel.setBackground(Color.yellow);
+        panel.add(Box.createRigidArea(new Dimension(10, 10)));
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
@@ -51,19 +52,19 @@ public class informationPage {
         JRadioButton level1 = new JRadioButton("Beginner");
         level1.setFont(CustomFont);
         level1.setBounds(10, 160, 100, 20);
-        level1.setHorizontalTextPosition(SwingConstants.CENTER);
+        level1.setHorizontalTextPosition(SwingConstants.LEADING);
         JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setFont(CustomFont);
         level2.setBounds(100, 160, 100, 20);
-        level2.setHorizontalTextPosition(SwingConstants.CENTER);
+        level2.setHorizontalTextPosition(SwingConstants.LEADING);
         JRadioButton level3 = new JRadioButton("Advanced");
         level3.setFont(CustomFont);
         level3.setBounds(190, 160, 100, 20);
-        level3.setHorizontalTextPosition(SwingConstants.CENTER);
+        level3.setHorizontalTextPosition(SwingConstants.LEADING);
         JRadioButton level4 = new JRadioButton("No Familiarity");
         level4.setFont(CustomFont);
         level4.setBounds(280, 160, 150, 20);
-        level4.setHorizontalTextPosition(SwingConstants.CENTER);
+        level4.setHorizontalTextPosition(SwingConstants.LEADING);
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
