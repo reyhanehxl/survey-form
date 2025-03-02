@@ -7,7 +7,7 @@ public class thankYouPage {
 
     public void create(JFrame frame) {
         // Creat an object of the Font class
-        Font CustomFont = new Font("Arial",Font.BOLD,24);
+        Font CustomFont = new Font("Arial",Font.BOLD,15);
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setLayout(null);
@@ -20,6 +20,7 @@ public class thankYouPage {
         JLabel thankYouLabel = new JLabel("Thank you for your participation!");
         thankYouLabel.setFont(CustomFont);
         thankYouLabel.setBounds(10, 10, 200, 20);
+        thankYouLabel.setHorizontalAlignment(JLabel.CENTER);
 
         // Add components to the panel
         panel.add(thankYouLabel);

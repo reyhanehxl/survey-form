@@ -7,7 +7,7 @@ public class Main{
 
     public static void main(String[] args) {
         // Creat an object of the Font class
-        Font CustomFont = new Font("Arial",Font.BOLD,24);
+        Font CustomFont = new Font("Arial",Font.BOLD,15);
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey Form");
         frame.setFont(CustomFont);
@@ -23,6 +23,7 @@ public class Main{
         panel.setLayout(new BorderLayout());
         panel.setBackground(Color.YELLOW);
 
+
         // Create title label
         JLabel title = new JLabel("Survey Form");
         title.setFont(CustomFont);
@@ -34,10 +35,10 @@ public class Main{
         startButton.setFont(CustomFont);
         startButton.setHorizontalAlignment(SwingConstants.CENTER);
 
-        startButton.setBounds(10, 40, 100, 20);
+        startButton.setBounds(40, 40, 100, 20);
 
         // Add components to the panel
-        panel.add(title);
+        panel.add(title, BorderLayout.NORTH);
         panel.add(startButton);
 
         // Add panel to the frame
